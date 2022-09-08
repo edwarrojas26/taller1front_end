@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  border: 0;
+  /* border: solid red 1px; */
+}
+body {
+  padding: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: auto;
+}
+
+.tittle {
+  display: flex;
+  color: rgba(255, 225, 225);
+  font-size: 2.8em;
+  padding-top: 10px;
+}
+
+.inputs {
+  padding: 10px;
+}
+.inputs [type="text"] {
+  width: 280px;
+  margin-left: 320px;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+
+.inputs [type="submit"] {
+  width: 200px;
+  margin-left: 380px;
+  height: 40px;
+  border-radius: 5px;
+
+  color: white;
+  background-color: brown;
+}
+
+.inputs [type="submit"]:hover {
+  background-color: crimson;
+}
+
+.grados {
+  background-color: white;
+  display: inline-block;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grados [type="text"] {
+  width: 280px;
+  margin-left: 320px;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+
+.grados div {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.contenedor {
+  padding-left: 100px;
+}
+
+.grados .contenedor div select {
+  height: 30px;
+  color: white;
+  border-radius: 3px;
+  background-color: green;
+}
+
+.lados {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.lados [type="text"] {
+  width: 200px;
+
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
