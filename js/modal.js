@@ -1,25 +1,41 @@
-/*Acceder al botón para abrir el modal */
+//Modal cuadrado
+let btnmodalPT = document.querySelector(".perimetroT");
 
-let btnmodalP=document.getElementById("perimetroT");
-let btnmodalA=document.getElementById("areaT");
+let venmodalPT = document.querySelector(".modalPT");
 
-//Acceder ventana modal
-let venmodalP=document.getElementById("modalAT");
-let venmodalA=docuem.getElementById("modalPT");
+let cermodal = document.querySelector(".cerrarModal");
 
-//Acceder al botón Cerrar de la ventana modal
-let cermodal=document.querySelector(".cerrarModal");
+//Modal Perimetro
+btnmodalPT.addEventListener("click", () => {
+  venmodalPT.style.display = "block";
+});
 
-btnmodalP.addEventListener("click",()=>{
-    venmodalP.style.display="block";
-})
+cermodal.addEventListener("click", () => {
+  venmodalPT.style.display = "none";
+});
 
-cermodal.addEventListener("click",()=>{
-    venmodalP.style.display="none"; 
-})
+window.addEventListener("click", (e) => {
+  if (e.target == venmodalPT) {
+    venmodalPT.style.display = "none";
+  }
+});
 
-window.addEventListener("click",(e)=>{
-if(e.target==venmodalP){
-    venmodalP.style.display="none"; 
-}
-})
+//Modal Area
+
+let btnmodalAT = document.querySelector(".areaT");
+
+let venmodalAT = docuem.querySelector(".modalAT");
+
+btnmodalAT.addEventListener("click", () => {
+  venmodalAT.style.display = "block";
+});
+
+cermodal.addEventListener("click", () => {
+  venmodalAT.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target == venmodalAT) {
+    venmodalAT.style.display = "none";
+  }
+});
