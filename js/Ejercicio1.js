@@ -6,7 +6,7 @@ let boton = document.querySelector(".LP");
 function mostrarLongitud() {
   let caracteres = palabra.value.length;
 
-  alert(`El nombre ${palabra.value} tiene ${caracteres} caracteres`);
+  alert(`La palabra ${palabra.value} tiene ${caracteres} caracteres`);
 }
 
 boton.addEventListener("click", mostrarLongitud);

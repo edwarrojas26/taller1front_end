@@ -16,35 +16,38 @@ body {
 
 .tittle {
   display: flex;
-  color: rgba(255, 225, 225);
+  color: #ffffff;
   font-size: 2.8em;
   padding-top: 10px;
 }
 
 .inputs {
+  display: flex;
   padding: 10px;
+  justify-content: center;
+  flex-direction: column;
 }
+
 .inputs [type="text"] {
   width: 280px;
-  margin-left: 320px;
-  height: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: auto;
+  margin-left: 25%;
+  padding: 20px;
   border-radius: 5px;
+  font-size: 1em;
 }
 
 .inputs [type="submit"] {
+  margin-left: 33%;
   width: 200px;
-  margin-left: 380px;
   height: 40px;
   border-radius: 5px;
-
   color: white;
-  background-color: brown;
+  background-color: rgb(0, 100, 0);
 }
 
 .inputs [type="submit"]:hover {
-  background-color: crimson;
+  background-color: rgb(0, 75, 0);
 }
 
 .grados {
@@ -84,13 +87,13 @@ body {
   display: flex;
   padding: 10px;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .lados [type="text"] {
   width: 200px;
-
   height: 30px;
-  padding-left: 20px;
+  padding-left: 200px;
   padding-right: 20px;
   border-radius: 5px;
+  align-items: center;
 }

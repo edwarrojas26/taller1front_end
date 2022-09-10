@@ -25,7 +25,8 @@ iframe {
   justify-content: center;
   height: 515px;
   margin-left: 10%;
-  margin-top: -512px; 
+  margin-top: -512px;
+  /* background-image: url(../img/hacker-internet.jpg); */
   background-image: url(../img/imagen.png);
 }
 
