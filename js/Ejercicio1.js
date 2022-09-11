@@ -27,7 +27,7 @@ let botonMinus = document.querySelector(".Minus");
 
 function aMinusculas() {
   let minusculas = palabra.value.toLowerCase();
-  alert(`Se ha convertido la palabra ${palabra.value} a ${minusculas}`);
+  alert(`${minusculas}`);
 }
 botonMinus.addEventListener(`click`, aMinusculas);
 
@@ -37,6 +37,6 @@ let botonPC = document.querySelector(".PC");
 
 function primerCaracter() {
   let primerC = palabra.value.charAt(0);
-  alert(`El primer caracter de la palabra ${palabra.value} es ${primerC}`);
+  alert(`El primer caracter de la palabra " ${palabra.value} " es ${primerC}`);
 }
 botonPC.addEventListener(`click`, primerCaracter);

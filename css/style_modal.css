@@ -62,10 +62,17 @@
 .cardCi [type="submit"] {
   padding: 5px;
   margin: 3px;
-  background-color: darkblue;
+  background-color: rgba(15, 25, 217);
   border-radius: 3px;
   border: solid black 0.5px;
   color: white;
+}
+
+.cardT [type="submit"]:hover,
+.cardR [type="submit"]:hover,
+.cardCU [type="submit"]:hover,
+.cardCi [type="submit"]:hover {
+  background-color: rgba(46, 54, 217);
 }
 
 .modalPCu,

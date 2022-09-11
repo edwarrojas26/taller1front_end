@@ -6,6 +6,8 @@
 body {
   padding: 20px;
 }
+/*Ejercicio 1*/
+/*Ejericios*/
 .container {
   display: flex;
   justify-content: center;
@@ -20,6 +22,8 @@ body {
   font-size: 2.8em;
   padding-top: 10px;
 }
+
+/*---------------------------------------*/
 
 .inputs {
   display: flex;
@@ -42,16 +46,17 @@ body {
   width: 200px;
   height: 40px;
   border-radius: 5px;
-  color: white;
-  background-color: rgb(0, 100, 0);
+  color: rgb(225, 225, 225);
+  background-color: rgba(15, 25, 217);
 }
 
 .inputs [type="submit"]:hover {
-  background-color: rgb(0, 75, 0);
+  background-color: rgba(46, 54, 217);
 }
 
+/*Ejericio 3*/
+
 .grados {
-  background-color: white;
   display: inline-block;
   padding: 10px;
   display: flex;
@@ -67,33 +72,90 @@ body {
   border-radius: 5px;
 }
 
+.consultar {
+  margin-left: 33%;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  color: rgb(225, 225, 225);
+  background-color: rgba(15, 25, 217);
+}
+
+.inputs [type="submit"]:hover {
+  background-color: rgba(46, 54, 217);
+}
+
 .grados div {
   display: inline-block;
   margin-left: 20px;
 }
 
 .contenedor {
-  padding-left: 100px;
+  display: flex;
+  padding-left: 40px;
+}
+
+.contenedor .texto {
+  color: white;
 }
 
 .grados .contenedor div select {
   height: 30px;
-  color: white;
+  color: black;
   border-radius: 3px;
-  background-color: green;
+  background-color: rgba(255, 214, 0, 255);
 }
 
 .lados {
   display: flex;
   padding: 10px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lados label {
+  display: flex;
+  justify-content: flex-start;
+  color: rgba(225, 225, 225);
 }
 .lados [type="text"] {
   width: 200px;
   height: 30px;
-  padding-left: 200px;
-  padding-right: 20px;
+  padding-left: 5px;
   border-radius: 5px;
   align-items: center;
+}
+
+/*Ejercicio 2*/
+.grados [type="text"] {
+  width: 280px;
+  height: auto;
+  margin-left: 25%;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+input {
+  border-color: rgb(0, 0, 0);
+}
+
+.contenedor1 .texto {
+  display: inline-block;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor1 .texto {
+  display: flex;
+  justify-content: flex-start;
+  color: rgba(225, 225, 225);
+}
+
+.contenedor1 div select {
+  height: 30px;
+  color: black;
+  border-radius: 3px;
+  background-color: rgba(255, 214, 0, 255);
 }

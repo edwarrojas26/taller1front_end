@@ -20,7 +20,7 @@ function clasificacionTriangulos() {
     );
   } else {
     alert(
-      `los 3 lados son diferentes, por tal motivo se trata de un triángulo escaleno`
+      `Los 3 lados son diferentes, por tal motivo se trata de un triángulo escaleno`
     );
   }
 }
