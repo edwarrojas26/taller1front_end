@@ -64,7 +64,7 @@
   margin: 3px;
   background-color: rgba(15, 25, 217);
   border-radius: 3px;
-  border: solid black 0.5px;
+  border: none;
   color: white;
 }
 
@@ -72,7 +72,7 @@
 .cardR [type="submit"]:hover,
 .cardCU [type="submit"]:hover,
 .cardCi [type="submit"]:hover {
-  background-color: rgba(46, 54, 217);
+  background-color: rgb(6, 11, 112);
 }
 
 .modalPCu,
@@ -90,10 +90,89 @@
   z-index: 1;
   top: 0;
   overflow: auto;
-  padding-top: 200px;
+  padding-top: 100px;
   display: none;
 }
 
+.modalPCu span,
+.modalACu span,
+.modalPT span,
+.modalAT span,
+.modalPR span,
+.modalAR span,
+.modalPCI span,
+.modalACI span {
+  color: white;
+}
+
+.modalPCu label,
+.modalACu label,
+.modalPT label,
+.modalAT label,
+.modalPR label,
+.modalAR label,
+.modalPCI label,
+.modalACI label {
+  color: black;
+}
+
+.modalPCu .datos,
+.modalACu .datos,
+.modalPT .datos,
+.modalAT .datos,
+.modalPR .datos,
+.modalAR .datos,
+.modalPCI .datos,
+.modalACI .datos {
+  width: 400px;
+  margin-top: -100px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin-left: 15.5%;
+  border-radius: 5px;
+}
+
+.modalPCu .datos [type="text"],
+.modalACu .datos [type="text"],
+.modalPT .datos [type="text"],
+.modalAT .datos [type="text"],
+.modalPR .datos [type="text"],
+.modalAR .datos [type="text"],
+.modalPCI .datos [type="text"],
+.modalACI .datos [type="text"] {
+  padding: 8px;
+}
+
+.modalPCu .datos [type="submit"],
+.modalACu .datos [type="submit"],
+.modalPT .datos [type="submit"],
+.modalAT .datos [type="submit"],
+.modalPR .datos [type="submit"],
+.modalAR .datos [type="submit"],
+.modalPCI .datos [type="submit"],
+.modalACI .datos [type="submit"] {
+  padding: 5px;
+  margin: 3px;
+  background-color: rgba(15, 25, 217);
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+
+.modalPCu .datos [type="submit"]:hover,
+.modalACu .datos [type="submit"]:hover,
+.modalPT .datos [type="submit"]:hover,
+.modalAT .datos [type="submit"]:hover,
+.modalPR .datos [type="submit"]:hover,
+.modalAR .datos [type="submit"]:hover,
+.modalPCI .datos [type="submit"]:hover,
+.modalACI .datos [type="submit"]:hover {
+  background-color: rgb(6, 11, 112);
+}
 .container1 {
   display: flex;
   justify-content: center;
@@ -105,7 +184,7 @@
   display: flex;
   color: #ffffff;
   font-size: 2.8em;
-  margin-top: -130px;
+  margin-top: -80px;
 }
 
 @keyframes animarmodal {
@@ -118,7 +197,7 @@
     opacity: 1;
   }
 }
-.cerrarModal {
+.cerrarModal, .cerrarModal1, .cerrarModal2, .cerrarModal3, .cerrarModal4, .cerrarModal5, .cerrarModal6, .cerrarModal7 {
   font-size: 2rem;
   float: right;
 }
@@ -126,6 +205,8 @@
 .cerrarModal:hover {
   cursor: pointer;
 }
+
+
 
 .contenidoModal h2 {
   background-color: blueviolet;

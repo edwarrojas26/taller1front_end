@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <form class="formulario" action="" method="post">
+
+        <div class="grupo" id="TipoDoc">
+            <label for="TipoDoc" class="label">Tipo de documento</label>
+            <select class="input">
+                <option value="">Seleccionar</option>
+                <option value="">Registro civil</option>
+                <option value="">Tarjeta de identidad</option>
+                <option value="">Cedula de cuidadania</option>
+                <option value="">Pasaporte</option>
+            </select>
+        </div>
+
+
+        <div class="grupo" id="NDoc">
+            <label for="nombre" class="label"># Documento</label>
+            <input type="text" class="input" name="nombre" id="nombre" >
+
+        </div>
+
+        <!-- Grupo: Contraseña -->
+        <div class="grupo" id="nombre">
+            <label for="nombre" class="label">Nombre</label>
+            <input type="text" class="input" name="nombre" id="password">
+
+        </div>
+
+        <!-- Grupo: Contraseña 2 -->
+        <div class="grupo" id="pellido">
+            <label for="apellido" class="label">Apellido</label>
+            <input type="text" class="input" name="apellido" id="password2">
+        </div>
+
+        <!-- Grupo: Correo Electronico -->
+        <div class="grupo" id="FN">
+            <label for="fecha" class="label">Fecha Nacimiento</label>
+            <input type="date" class="input" name="fecha" id="correo" placeholder="">
+
+
+        </div>
+
+        <!-- Grupo: Teléfono -->
+        <div class="grupo" id="correo">
+            <label for="telefono" class="label">Correo electronico</label>
+            <input type="text" class="input" name="telefono" id="telefono" placeholder="correo@correo.com">
+
+        </div>
+
+        <div class="grupo" id="contraseña">
+            <label for="telefono" class="label">Password</label>
+            <input type="password" class="input" name="telefono" id="telefono">
+
+        </div>
+
+        <div class="grupo" id="contraseña1">
+            <label for="telefono" class="label">Comprobar password</label>
+            <input type="password" class="input" name="telefono" id="telefono">
+        </div>
+
+        <!-- Grupo: Terminos y Condiciones -->
+        <div class="grupo" id="terminos">
+            <label class="label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los Terminos y Condiciones
+            </label>
+        </div>
+
+        <div class="grupo" id="boton">
+            <input class="btn" type="submit">
+        </div>
+
+    </form>
+
+    <script src="js/Formulario.js"></script>
+</body>
+
+</html>

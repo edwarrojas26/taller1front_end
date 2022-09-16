@@ -46,6 +46,8 @@ ul li a {
 .imagen {
   width: 40%;
   height: 510px;
-  margin-left: -auto;
+  margin-left: auto;
   float: left;
 }
+
+

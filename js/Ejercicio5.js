@@ -92,7 +92,7 @@ function perimetroRectangulo() {
   let lado4 = document.querySelector(".lado4");
   let lado5 = document.querySelector(".lado5");
 
-  let perimetro4 = (parseFloat(lado4.value) * 2)(parseFloat(lado5.value) * 2);
+  let perimetro4 = (lado4.value * 2)(lado5.value * 2);
 
   alert(`El perimetro del rectangulo es ${perimetro4}`);
 }
