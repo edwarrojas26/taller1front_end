@@ -59,7 +59,33 @@ main {
   box-shadow: 8px 0px 50px rgba(163, 163, 163, 0.4);
 }
 
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+  color: white;
+}
 
+
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+
+
+.grupo-incorrecto .label {
+	color: #bb2929;
+}
+
+.grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
 
 
 

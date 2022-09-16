@@ -11,68 +11,71 @@
 
 <body>
 
-    <form class="formulario" action="" method="post">
+    <form class="formulario" action="" method="post" id="formulario">
 
-        <div class="grupo" id="TipoDoc">
+        <div class="grupo" id="grupo__TipoDoc">
             <label for="TipoDoc" class="label">Tipo de documento</label>
-            <select class="input">
+            <select class="input" id="TipoDoc" name="TipoDoc">
                 <option value="">Seleccionar</option>
                 <option value="">Registro civil</option>
                 <option value="">Tarjeta de identidad</option>
                 <option value="">Cedula de cuidadania</option>
                 <option value="">Pasaporte</option>
             </select>
+            <p class="formulario__input-error">Debe seleccionar algun tipo de documento</p>
         </div>
 
 
-        <div class="grupo" id="NDoc">
-            <label for="nombre" class="label"># Documento</label>
-            <input type="text" class="input" name="nombre" id="nombre" >
-
+        <div class="grupo" id="grupo__NDoc">
+            <label for="NDoc" class="label"># Documento</label>
+            <input type="text" class="input" name="NDoc" id="NDoc" >
+            <p class="formulario__input-error">Debe contener numero cuya longitud no supere los <br> 11 caracteres, no debe poseer letras y no debe contener caracteres especiales</p>
         </div>
 
-        <!-- Grupo: Contraseña -->
-        <div class="grupo" id="nombre">
+
+        <div class="grupo" id="grupo__nombre">
             <label for="nombre" class="label">Nombre</label>
-            <input type="text" class="input" name="nombre" id="password">
+            <input type="text" class="input" name="nombre" id="nombre">
+            <p class="formulario__input-error">El nombre tiene que tener solo letras.</p>
 
         </div>
 
-        <!-- Grupo: Contraseña 2 -->
-        <div class="grupo" id="pellido">
+ 
+        <div class="grupo" id="grupo__apellido">
             <label for="apellido" class="label">Apellido</label>
-            <input type="text" class="input" name="apellido" id="password2">
+            <input type="text" class="input" name="apellido" id="apellido">
+            <p class="formulario__input-error">El apellido tiene que tener solo letras.</p>
         </div>
 
-        <!-- Grupo: Correo Electronico -->
-        <div class="grupo" id="FN">
+        <div class="grupo" id="grupo__fecha">
             <label for="fecha" class="label">Fecha Nacimiento</label>
-            <input type="date" class="input" name="fecha" id="correo" placeholder="">
-
-
-        </div>
-
-        <!-- Grupo: Teléfono -->
-        <div class="grupo" id="correo">
-            <label for="telefono" class="label">Correo electronico</label>
-            <input type="text" class="input" name="telefono" id="telefono" placeholder="correo@correo.com">
+            <input type="date" class="input" name="fecha" id="fecha" placeholder="">
+            <p class="formulario__input-error">La fecha tiene que tener números y slash(/) .</p>
 
         </div>
 
-        <div class="grupo" id="contraseña">
-            <label for="telefono" class="label">Password</label>
-            <input type="password" class="input" name="telefono" id="telefono">
+        <div class="grupo" id="grupo__correo">
+            <label for="correo" class="label">Correo electronico</label>
+            <input type="text" class="input" name="correo" id="correo" placeholder="correo@correo.com">
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
 
         </div>
 
-        <div class="grupo" id="contraseña1">
-            <label for="telefono" class="label">Comprobar password</label>
-            <input type="password" class="input" name="telefono" id="telefono">
+        <div class="grupo" id="grupo__contraseña">
+            <label for="contraseña" class="label">Password</label>
+            <input type="password" class="input" name="contraseña" id="telefono">
+            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+
         </div>
 
-        <!-- Grupo: Terminos y Condiciones -->
-        <div class="grupo" id="terminos">
-            <label class="label">
+        <div class="grupo" id="grupo__contraseña1">
+            <label for="contraseña1" class="label">Comprobar password</label>
+            <input type="password" class="input" name="contraseña1" id="telefono">
+            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+        </div>
+
+        <div class="grupo" id="grupo__terminos">
+            <label class="label" for="terminos">
                 <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
                 Acepto los Terminos y Condiciones
             </label>
