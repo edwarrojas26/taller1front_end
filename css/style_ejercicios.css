@@ -18,7 +18,7 @@ body {
 
 .tittle {
   display: flex;
-  color: #ffffff;
+  color: #000;
   font-size: 2.8em;
   padding-top: 10px;
 }
@@ -29,60 +29,62 @@ body {
   display: flex;
   padding: 10px;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .inputs [type="text"] {
+  justify-content: center;
   width: 280px;
   height: auto;
-  margin-left: 25%;
+
   padding: 20px;
   border-radius: 5px;
   font-size: 1em;
 }
 
 .inputs [type="submit"] {
-  margin-left: 33%;
   width: 200px;
   height: 40px;
   border-radius: 5px;
   color: rgb(225, 225, 225);
-  background-color: rgba(15, 25, 217);
+  background-color: rgba(0, 225, 0);
 }
 
 .inputs [type="submit"]:hover {
-  background-color: rgba(46, 54, 217);
+  background-color: rgb(8, 185, 8);
 }
-
-/*Ejericio 3*/
 
 .grados {
   display: inline-block;
   padding: 10px;
-  display: flex;
+  display: grid;
   flex-direction: column;
 }
 
 .grados [type="text"] {
   width: 280px;
-  margin-left: 320px;
   height: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
   border-radius: 5px;
 }
 
+.grados .valor1 {
+  margin-right: 20%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
 .consultar {
   margin-left: 33%;
   width: 200px;
   height: 40px;
   border-radius: 5px;
   color: rgb(225, 225, 225);
-  background-color: rgba(15, 25, 217);
+  background-color: rgba(0, 225, 0);
 }
 
 .inputs [type="submit"]:hover {
-  background-color: rgba(46, 54, 217);
+  background-color: rgb(8, 185, 8);
 }
 
 .grados div {
@@ -92,7 +94,8 @@ body {
 
 .contenedor {
   display: flex;
-  padding-left: 40px;
+  justify-content: center;
+  padding-left: 25%;
 }
 
 .contenedor .texto {
@@ -107,6 +110,7 @@ body {
 }
 
 .lados {
+  padding-left: 50%;
   display: flex;
   padding: 10px;
   flex-direction: column;
@@ -115,15 +119,21 @@ body {
 
 .lados label {
   display: flex;
-  justify-content: flex-start;
-  color: rgba(225, 225, 225);
+  justify-content: center;
+  color: rgba(0, 0, 0);
 }
 .lados [type="text"] {
   width: 200px;
   height: 30px;
-  padding-left: 5px;
+  margin-left: 42%;
   border-radius: 5px;
   align-items: center;
+}
+
+.lados input {
+  display: flex;
+  justify-content: center;
+
 }
 
 /*Ejercicio 2*/
@@ -140,22 +150,30 @@ input {
   border-color: rgb(0, 0, 0);
 }
 
-.contenedor1 .texto {
-  display: inline-block;
-  padding: 10px;
+.contenedor1 {
   display: flex;
   flex-direction: column;
+
+  align-items: center;
+}
+
+.contenedor1 .texto {
+  
+  padding: 10px;
+  
+  
+  justify-content: center;
 }
 
 .contenedor1 .texto {
   display: flex;
   justify-content: flex-start;
-  color: rgba(225, 225, 225);
+  color: rgba(0, 0, 0);
 }
 
 .contenedor1 div select {
   height: 30px;
-  color: black;
+  color: rgba(0, 0, 0);
   border-radius: 3px;
-  background-color: rgba(255, 214, 0, 255);
+  background-color: rgba(0, 225, 0);
 }

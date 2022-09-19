@@ -15,12 +15,12 @@
 
         <div class="grupo" id="grupo__TipoDoc">
             <label for="TipoDoc" class="label">Tipo de documento</label>
-            <select class="input" id="TipoDoc" name="TipoDoc">
+            <select class="input">
                 <option value="">Seleccionar</option>
-                <option value="">Registro civil</option>
-                <option value="">Tarjeta de identidad</option>
-                <option value="">Cedula de cuidadania</option>
-                <option value="">Pasaporte</option>
+                <option value="" id="TipoDoc" name="TipoDoc">Registro civil</option>
+                <option value="" id="TipoDoc" name="TipoDoc">Tarjeta de identidad</option>
+                <option value="" id="TipoDoc" name="TipoDoc">Cedula de cuidadania</option>
+                <option value="" id="TipoDoc" name="TipoDoc">Pasaporte</option>
             </select>
             <p class="formulario__input-error">Debe seleccionar algun tipo de documento</p>
         </div>
@@ -28,8 +28,9 @@
 
         <div class="grupo" id="grupo__NDoc">
             <label for="NDoc" class="label"># Documento</label>
-            <input type="text" class="input" name="NDoc" id="NDoc" >
-            <p class="formulario__input-error">Debe contener numero cuya longitud no supere los <br> 11 caracteres, no debe poseer letras y no debe contener caracteres especiales</p>
+            <input type="text" class="input" name="NDoc" id="NDoc">
+            <p class="formulario__input-error">Debe contener numero cuya longitud no supere los <br> 11 caracteres, no
+                debe poseer letras y no debe contener caracteres especiales</p>
         </div>
 
 
@@ -40,7 +41,7 @@
 
         </div>
 
- 
+
         <div class="grupo" id="grupo__apellido">
             <label for="apellido" class="label">Apellido</label>
             <input type="text" class="input" name="apellido" id="apellido">
@@ -57,20 +58,20 @@
         <div class="grupo" id="grupo__correo">
             <label for="correo" class="label">Correo electronico</label>
             <input type="text" class="input" name="correo" id="correo" placeholder="correo@correo.com">
-            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            <p class="formulario__input-error">El correo solo puede contener letras, números, . , - , _ y @.</p>
 
         </div>
 
         <div class="grupo" id="grupo__contraseña">
             <label for="contraseña" class="label">Password</label>
-            <input type="password" class="input" name="contraseña" id="telefono">
+            <input type="password" class="input" name="contraseña" id="contraseña">
             <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
 
         </div>
 
         <div class="grupo" id="grupo__contraseña1">
             <label for="contraseña1" class="label">Comprobar password</label>
-            <input type="password" class="input" name="contraseña1" id="telefono">
+            <input type="password" class="input" name="contraseña1" id="contraseña1">
             <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
         </div>
 
@@ -81,10 +82,14 @@
             </label>
         </div>
 
-        <div class="grupo" id="boton">
-            <input class="btn" type="submit">
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
         </div>
 
+        <div class="grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
     </form>
 
     <script src="js/Formulario.js"></script>

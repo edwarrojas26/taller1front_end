@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  /* border: solid red 1px; */
+  /*border: solid red 1px;*/
 }
 
 body {
@@ -22,11 +22,11 @@ main {
   padding-left: 60px;
 }
 
-.grupo{
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.grupo {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .label {
@@ -60,35 +60,40 @@ main {
 }
 
 .formulario__input-error {
-	font-size: 12px;
-	margin-bottom: 0;
-	display: none;
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
   color: white;
 }
 
-
-
 .formulario__input-error-activo {
-	display: block;
+  display: block;
 }
 
-
-
 .grupo-incorrecto .label {
-	color: #bb2929;
+  color: #bb2929;
 }
 
 .grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
+  color: #bb2929;
+  opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid #bb2929;
+.grupo-incorrecto .input {
+  border: 3px solid #bb2929;
 }
 
+.grupo-incorrecto .input {
+  border: 3px solid #bb2929;
+}
 
+.grupo-correcto .input {
+  border: 3px solid #35bb29;
+}
 
+.grupo-correcto .input {
+  border: 3px solid #35bb29;
+}
 .btn {
   height: 45px;
   line-height: 45px;
@@ -106,9 +111,25 @@ main {
 .btn:hover {
   background-color: #047404;
 }
+.formulario__mensaje {
+  height: 45px;
+  line-height: 45px;
+  background: #f66060;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
 
+.formulario__mensaje-activo {
+  display: block;
+}
 
+.formulario__mensaje-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
 
-
-
-
+.formulario__mensaje-exito-activo {
+  display: block;
+}
