@@ -2,17 +2,16 @@ const formulario = document.getElementById("formulario");
 const inputs = document.querySelectorAll("#formulario input");
 
 const expresionesRegulares = {
-  NDoc: /^\d{10}$/,
+  NDoc: /^\d{9,11}$/,
   nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
   apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
   fecha: /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/,
-  correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+  correo: /^[a-zA-Z0-9_.+-]+@+[misena]+.[edu]+.[c]+[o]$/,
   contraseña: /^.{4,12}$/,
   contraseña1: /^.{4,12}$/,
 };
 
 const campos = {
-  TipoDoc: false,
   NDoc: false,
   nombre: false,
   apellido: false,
@@ -81,14 +80,26 @@ const validarPassword2 = () => {
   const inputPassword2 = document.getElementById("contraseña1");
 
   if (inputPassword1.value !== inputPassword2.value) {
-    document.getElementById(`grupo__contraseña1`).classList.add("grupo-incorrecto");
-    document.getElementById(`grupo__contraseña1`).classList.remove("grupo-correcto");
-    document.querySelector(`#grupo__contraseña1 .formulario__input-error`).classList.add("formulario__input-error-activo");
+    document
+      .getElementById(`grupo__contraseña1`)
+      .classList.add("grupo-incorrecto");
+    document
+      .getElementById(`grupo__contraseña1`)
+      .classList.remove("grupo-correcto");
+    document
+      .querySelector(`#grupo__contraseña1 .formulario__input-error`)
+      .classList.add("formulario__input-error-activo");
     campos["password"] = false;
   } else {
-    document.getElementById(`grupo__contraseña1`).classList.remove("grupo-incorrecto");
-    document.getElementById(`grupo__contraseña1`).classList.add("grupo-correcto");
-    document.querySelector(`#grupo__contraseña1 .formulario__input-error`).classList.remove("formulario__input-error-activo");
+    document
+      .getElementById(`grupo__contraseña1`)
+      .classList.remove("grupo-incorrecto");
+    document
+      .getElementById(`grupo__contraseña1`)
+      .classList.add("grupo-correcto");
+    document
+      .querySelector(`#grupo__contraseña1 .formulario__input-error`)
+      .classList.remove("formulario__input-error-activo");
     campos["password"] = true;
   }
 };
@@ -103,7 +114,6 @@ formulario.addEventListener("submit", (e) => {
 
   const terminos = document.getElementById("terminos");
   if (
-    TipoDoc.selected &&
     campos.NDoc &&
     campos.nombre &&
     campos.apellido &&
@@ -113,17 +123,19 @@ formulario.addEventListener("submit", (e) => {
     campos.contraseña1 &&
     terminos.checked
   ) {
-		formulario.reset();
+    formulario.reset();
 
-		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-		}, 5000);
-
-		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('formulario__grupo-correcto');
-		});
-	} else {
-		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-	}
+    document
+      .getElementById("formulario__mensaje-exito")
+      .classList.add("formulario__mensaje-exito-activo");
+    setTimeout(() => {
+      document
+        .getElementById("formulario__mensaje-exito")
+        .classList.remove("formulario__mensaje-exito-activo");
+    }, 5000);
+  } else {
+    document
+      .getElementById("formulario__mensaje")
+      .classList.add("formulario__mensaje-activo");
+  }
 });

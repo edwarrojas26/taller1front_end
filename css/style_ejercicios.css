@@ -6,7 +6,10 @@
 body {
   padding: 20px;
 }
-/*Ejercicio 1*/
+
+@media only screen and (min-width: 1024px) {
+
+    /*Ejercicio 1*/
 /*Ejericios*/
 .container {
   display: flex;
@@ -176,4 +179,181 @@ input {
   color: rgba(0, 0, 0);
   border-radius: 3px;
   background-color: rgba(0, 225, 0);
+}
+}
+
+@media only screen and (min-width: 320px) {
+
+  /*Ejercicio 1*/
+/*Ejericios*/
+.container {
+  display: flex;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: auto;
+}
+
+.tittle {
+  display: flex;
+  color: #000;
+  font-size: 2.8em;
+  padding-top: 10px;
+}
+
+/*---------------------------------------*/
+
+.inputs {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputs [type="text"] {
+  justify-content: center;
+  width: 280px;
+  height: auto;
+
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.inputs [type="submit"] {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  color: rgb(225, 225, 225);
+  background-color: rgba(0, 225, 0);
+}
+
+.inputs [type="submit"]:hover {
+  background-color: rgb(8, 185, 8);
+}
+
+.grados {
+  display: inline-block;
+  padding: 10px;
+  display: grid;
+  flex-direction: column;
+}
+
+.grados [type="text"] {
+  width: 280px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.grados .valor1 {
+  margin-right: 20%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+.consultar {
+  margin-left: 33%;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  color: rgb(225, 225, 225);
+  background-color: rgba(0, 225, 0);
+}
+
+.inputs [type="submit"]:hover {
+  background-color: rgb(8, 185, 8);
+}
+
+.grados div {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  padding-left: 25%;
+}
+
+.contenedor .texto {
+  color: white;
+}
+
+.grados .contenedor div select {
+  height: 30px;
+  color: black;
+  border-radius: 3px;
+  background-color: rgba(255, 214, 0, 255);
+}
+
+.lados {
+  padding-left: 50%;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lados label {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0);
+}
+.lados [type="text"] {
+  width: 200px;
+  height: 30px;
+  margin-left: 42%;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.lados input {
+  display: flex;
+  justify-content: center;
+
+}
+
+/*Ejercicio 2*/
+.grados [type="text"] {
+  width: 280px;
+  height: auto;
+  margin-left: 25%;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+input {
+  border-color: rgb(0, 0, 0);
+}
+
+.contenedor1 {
+  display:flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.contenedor1 .texto {
+  
+  padding: 10px;
+  
+  
+  justify-content: center;
+}
+
+.contenedor1 .texto {
+  display:flex;
+  justify-content: flex-start;
+  color: rgba(0, 0, 0);
+}
+
+.contenedor1 div select {
+  height: 30px;
+  color: rgba(0, 0, 0);
+  border-radius: 3px;
+  background-color: rgba(0, 225, 0);
+}
+
 }

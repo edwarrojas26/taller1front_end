@@ -4,214 +4,442 @@
   padding: 0;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: 80px;
-}
-
-.tittle {
-  display: flex;
-  color: rgb(0, 0, 0);
-  font-size: 2.8em;
-}
-
-.cardT,
-.cardR,
-.cardCU,
-.cardCi {
-  width: 180px;
-  height: 200.5px;
-  border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  margin: 5px;
-  text-align: center;
-  transition: all 0.25s;
-  position: relative;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-.cardT img,
-.cardR img,
-.cardCU img {
-  margin: 10px;
-  width: 140px;
-  height: 140px;
-}
-
-.cardCi img {
-  margin: 10px;
-  width: 140px;
-  height: 140px;
-}
-
-.contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 60%;
-  margin-left: 20%;
-}
-
-.cardT [type="submit"],
-.cardR [type="submit"],
-.cardCU [type="submit"],
-.cardCi [type="submit"] {
-  padding: 5px;
-  margin: 3px;
-  background-color: rgba(15, 25, 217);
-  border-radius: 3px;
-  border: none;
-  color: white;
-}
-
-.cardT [type="submit"]:hover,
-.cardR [type="submit"]:hover,
-.cardCU [type="submit"]:hover,
-.cardCi [type="submit"]:hover {
-  background-color: rgb(6, 11, 112);
-}
-
-.modalPCu,
-.modalACu,
-.modalPT,
-.modalAT,
-.modalPR,
-.modalAR,
-.modalPCI,
-.modalACI {
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow: auto;
-  padding-top: 100px;
-  display: none;
-}
-
-.modalPCu span,
-.modalACu span,
-.modalPT span,
-.modalAT span,
-.modalPR span,
-.modalAR span,
-.modalPCI span,
-.modalACI span {
-  color: white;
-}
-
-.modalPCu label,
-.modalACu label,
-.modalPT label,
-.modalAT label,
-.modalPR label,
-.modalAR label,
-.modalPCI label,
-.modalACI label {
-  color: black;
-}
-
-.modalPCu .datos,
-.modalACu .datos,
-.modalPT .datos,
-.modalAT .datos,
-.modalPR .datos,
-.modalAR .datos,
-.modalPCI .datos,
-.modalACI .datos {
-  width: 400px;
-  margin-top: -100px;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-  margin-left: 15.5%;
-  border-radius: 5px;
-}
-
-.modalPCu .datos [type="text"],
-.modalACu .datos [type="text"],
-.modalPT .datos [type="text"],
-.modalAT .datos [type="text"],
-.modalPR .datos [type="text"],
-.modalAR .datos [type="text"],
-.modalPCI .datos [type="text"],
-.modalACI .datos [type="text"] {
-  padding: 8px;
-}
-
-.modalPCu .datos [type="submit"],
-.modalACu .datos [type="submit"],
-.modalPT .datos [type="submit"],
-.modalAT .datos [type="submit"],
-.modalPR .datos [type="submit"],
-.modalAR .datos [type="submit"],
-.modalPCI .datos [type="submit"],
-.modalACI .datos [type="submit"] {
-  padding: 5px;
-  margin: 3px;
-  background-color: rgba(15, 25, 217);
-  border-radius: 3px;
-  border: none;
-  color: white;
-}
-
-.modalPCu .datos [type="submit"]:hover,
-.modalACu .datos [type="submit"]:hover,
-.modalPT .datos [type="submit"]:hover,
-.modalAT .datos [type="submit"]:hover,
-.modalPR .datos [type="submit"]:hover,
-.modalAR .datos [type="submit"]:hover,
-.modalPCI .datos [type="submit"]:hover,
-.modalACI .datos [type="submit"]:hover {
-  background-color: rgb(6, 11, 112);
-}
-.container1 {
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: 80px;
-}
-
-.tittle1 {
-  display: flex;
-  color: #ffffff;
-  font-size: 2.8em;
-  margin-top: -80px;
-}
-
-@keyframes animarmodal {
-  from {
-    top: -300px;
-    opacity: 0;
+@media only  screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 80px;
   }
-  to {
+
+  .tittle {
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 2.8em;
+  }
+
+  .cardT,
+  .cardR,
+  .cardCU,
+  .cardCi {
+    width: 180px;
+    height: 200.5px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin: 5px;
+    text-align: center;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+  .cardT img,
+  .cardR img,
+  .cardCU img {
+    margin: 10px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .cardCi img {
+    margin: 10px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .cardT [type="submit"],
+  .cardR [type="submit"],
+  .cardCU [type="submit"],
+  .cardCi [type="submit"] {
+    padding: 5px;
+    margin: 3px;
+    background-color: rgba(15, 25, 217);
+    border-radius: 3px;
+    border: none;
+    color: white;
+  }
+
+  .cardT [type="submit"]:hover,
+  .cardR [type="submit"]:hover,
+  .cardCU [type="submit"]:hover,
+  .cardCi [type="submit"]:hover {
+    background-color: rgb(6, 11, 112);
+  }
+
+  .modalPCu,
+  .modalACu,
+  .modalPT,
+  .modalAT,
+  .modalPR,
+  .modalAR,
+  .modalPCI,
+  .modalACI {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
     top: 0;
-    opacity: 1;
+    overflow: auto;
+    padding-top: 100px;
+    display: none;
+  }
+
+  .modalPCu span,
+  .modalACu span,
+  .modalPT span,
+  .modalAT span,
+  .modalPR span,
+  .modalAR span,
+  .modalPCI span,
+  .modalACI span {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .modalPCu label,
+  .modalACu label,
+  .modalPT label,
+  .modalAT label,
+  .modalPR label,
+  .modalAR label,
+  .modalPCI label,
+  .modalACI label {
+    color: black;
+  }
+
+  .modalPCu .datos,
+  .modalACu .datos,
+  .modalPT .datos,
+  .modalAT .datos,
+  .modalPR .datos,
+  .modalAR .datos,
+  .modalPCI .datos,
+  .modalACI .datos {
+    width: 400px;
+    margin-top: -100px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 40%;
+    border-radius: 5px;
+  }
+
+  .modalPCu .datos [type="text"],
+  .modalACu .datos [type="text"],
+  .modalPT .datos [type="text"],
+  .modalAT .datos [type="text"],
+  .modalPR .datos [type="text"],
+  .modalAR .datos [type="text"],
+  .modalPCI .datos [type="text"],
+  .modalACI .datos [type="text"] {
+    padding: 8px;
+  }
+
+  .modalPCu .datos [type="submit"],
+  .modalACu .datos [type="submit"],
+  .modalPT .datos [type="submit"],
+  .modalAT .datos [type="submit"],
+  .modalPR .datos [type="submit"],
+  .modalAR .datos [type="submit"],
+  .modalPCI .datos [type="submit"],
+  .modalACI .datos [type="submit"] {
+    padding: 5px;
+    margin: 3px;
+    background-color: rgba(15, 25, 217);
+    border-radius: 3px;
+    border: none;
+    color: white;
+  }
+
+  .modalPCu .datos [type="submit"]:hover,
+  .modalACu .datos [type="submit"]:hover,
+  .modalPT .datos [type="submit"]:hover,
+  .modalAT .datos [type="submit"]:hover,
+  .modalPR .datos [type="submit"]:hover,
+  .modalAR .datos [type="submit"]:hover,
+  .modalPCI .datos [type="submit"]:hover,
+  .modalACI .datos [type="submit"]:hover {
+    background-color: rgb(6, 11, 112);
+  }
+  .container1 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 80px;
+  }
+
+  .tittle1 {
+    display: flex;
+    color: #ffffff;
+    font-size: 2.8em;
+    margin-top: -80px;
+  }
+
+  @keyframes animarmodal {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  .cerrarModal,
+  .cerrarModal1,
+  .cerrarModal2,
+  .cerrarModal3,
+  .cerrarModal4,
+  .cerrarModal5,
+  .cerrarModal6,
+  .cerrarModal7 {
+    font-size: 2rem;
+    float: right;
+  }
+
+  .cerrarModal:hover {
+    cursor: pointer;
+  }
+
+  .contenidoModal h2 {
+    background-color: blueviolet;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    clear: both;
   }
 }
-.cerrarModal, .cerrarModal1, .cerrarModal2, .cerrarModal3, .cerrarModal4, .cerrarModal5, .cerrarModal6, .cerrarModal7 {
-  font-size: 2rem;
-  float: right;
-}
 
-.cerrarModal:hover {
-  cursor: pointer;
-}
+@media only screen and (min-width: 320px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 80px;
+  }
 
+  .tittle {
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 2.8em;
+  }
 
+  .cardT,
+  .cardR,
+  .cardCU,
+  .cardCi {
+    width: 180px;
+    height: 200.5px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin: 5px;
+    text-align: center;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
 
-.contenidoModal h2 {
-  background-color: blueviolet;
-  color: #ffffff;
-  padding: 1rem 0;
-  text-align: center;
-  clear: both;
+  .cardT img,
+  .cardR img,
+  .cardCU img {
+    margin: 10px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .cardCi img {
+    margin: 10px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .cardT [type="submit"],
+  .cardR [type="submit"],
+  .cardCU [type="submit"],
+  .cardCi [type="submit"] {
+    padding: 5px;
+    margin: 3px;
+    background-color: rgba(15, 25, 217);
+    border-radius: 3px;
+    border: none;
+    color: white;
+  }
+
+  .cardT [type="submit"]:hover,
+  .cardR [type="submit"]:hover,
+  .cardCU [type="submit"]:hover,
+  .cardCi [type="submit"]:hover {
+    background-color: rgb(6, 11, 112);
+  }
+
+  .modalPCu,
+  .modalACu,
+  .modalPT,
+  .modalAT,
+  .modalPR,
+  .modalAR,
+  .modalPCI,
+  .modalACI {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 100px;
+    display: none;
+  }
+
+  .modalPCu span,
+  .modalACu span,
+  .modalPT span,
+  .modalAT span,
+  .modalPR span,
+  .modalAR span,
+  .modalPCI span,
+  .modalACI span {
+    color: white;
+  }
+
+  .modalPCu label,
+  .modalACu label,
+  .modalPT label,
+  .modalAT label,
+  .modalPR label,
+  .modalAR label,
+  .modalPCI label,
+  .modalACI label {
+    color: black;
+  }
+
+  .modalPCu .datos,
+  .modalACu .datos,
+  .modalPT .datos,
+  .modalAT .datos,
+  .modalPR .datos,
+  .modalAR .datos,
+  .modalPCI .datos,
+  .modalACI .datos {
+    width: 200px;
+    margin-top: -100px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 15%;
+    border-radius: 5px;
+  }
+
+  .modalPCu .datos [type="text"],
+  .modalACu .datos [type="text"],
+  .modalPT .datos [type="text"],
+  .modalAT .datos [type="text"],
+  .modalPR .datos [type="text"],
+  .modalAR .datos [type="text"],
+  .modalPCI .datos [type="text"],
+  .modalACI .datos [type="text"] {
+    padding: 8px;
+  }
+
+  .modalPCu .datos [type="submit"],
+  .modalACu .datos [type="submit"],
+  .modalPT .datos [type="submit"],
+  .modalAT .datos [type="submit"],
+  .modalPR .datos [type="submit"],
+  .modalAR .datos [type="submit"],
+  .modalPCI .datos [type="submit"],
+  .modalACI .datos [type="submit"] {
+    padding: 5px;
+    margin: 3px;
+    background-color: rgba(15, 25, 217);
+    border-radius: 3px;
+    border: none;
+    color: white;
+  }
+
+  .modalPCu .datos [type="submit"]:hover,
+  .modalACu .datos [type="submit"]:hover,
+  .modalPT .datos [type="submit"]:hover,
+  .modalAT .datos [type="submit"]:hover,
+  .modalPR .datos [type="submit"]:hover,
+  .modalAR .datos [type="submit"]:hover,
+  .modalPCI .datos [type="submit"]:hover,
+  .modalACI .datos [type="submit"]:hover {
+    background-color: rgb(6, 11, 112);
+  }
+  .container1 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 80px;
+  }
+
+  .tittle1 {
+    display: flex;
+    color: #ffffff;
+    margin-top: -80px;
+  }
+
+  @keyframes animarmodal {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  .cerrarModal,
+  .cerrarModal1,
+  .cerrarModal2,
+  .cerrarModal3,
+  .cerrarModal4,
+  .cerrarModal5,
+  .cerrarModal6,
+  .cerrarModal7 {
+    font-size: 2rem;
+    float: right;
+  }
+
+  .cerrarModal:hover {
+    cursor: pointer;
+  }
+
+  .contenidoModal h2 {
+    background-color: blueviolet;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    clear: both;
+  }
 }

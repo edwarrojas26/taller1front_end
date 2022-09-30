@@ -13,7 +13,7 @@
 
     <form class="formulario" action="" method="post" id="formulario">
 
-        <div class="grupo" id="grupo__TipoDoc">
+        <div class="grupo" id="grupo_TipoDoc">
             <label for="TipoDoc" class="label">Tipo de documento</label>
             <select class="input">
                 <option value="">Seleccionar</option>
@@ -29,8 +29,7 @@
         <div class="grupo" id="grupo__NDoc">
             <label for="NDoc" class="label"># Documento</label>
             <input type="text" class="input" name="NDoc" id="NDoc">
-            <p class="formulario__input-error">Debe contener numero cuya longitud no supere los <br> 11 caracteres, no
-                debe poseer letras y no debe contener caracteres especiales</p>
+            <p class="formulario__input-error">Debe contener solo números y una logitud de minimo 11 caracteres</p>
         </div>
 
 
@@ -83,7 +82,8 @@
         </div>
 
         <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.
+            </p>
         </div>
 
         <div class="grupo formulario__grupo-btn-enviar">
