@@ -59,10 +59,11 @@ body {
 }
 
 .grados {
-  display: inline-block;
   padding: 10px;
-  display: grid;
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: colum;
 }
 
 .grados [type="text"] {
@@ -90,50 +91,63 @@ body {
   background-color: rgb(8, 185, 8);
 }
 
-.grados div {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.contenedor {
-  display: flex;
-  justify-content: center;
-  padding-left: 25%;
-}
 
 .contenedor .texto {
+  display: flex;
   color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.grados .contenedor .convertir {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+}
+
+
+.grados .contenedor .convertir1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .grados .contenedor div select {
+  display: flex;
   height: 30px;
   color: black;
   border-radius: 3px;
-  background-color: rgba(255, 214, 0, 255);
+  background-color: rgb(214, 193, 76);
+  
 }
 
-.lados {
-  padding-left: 50%;
+#lados {
+  /* padding-left: 50%; */
   display: flex;
   padding: 10px;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.lados label {
+#lados label {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: rgba(0, 0, 0);
 }
-.lados [type="text"] {
+#lados [type="text"] {
   width: 200px;
   height: 30px;
-  margin-left: 42%;
+  /* margin-left: 42%; */
   border-radius: 5px;
   align-items: center;
 }
 
-.lados input {
+#lados .consultar {
   display: flex;
   justify-content: center;
 
@@ -149,9 +163,7 @@ body {
   font-size: 1em;
 }
 
-input {
-  border-color: rgb(0, 0, 0);
-}
+
 
 .contenedor1 {
   display: flex;
@@ -180,6 +192,12 @@ input {
   border-radius: 3px;
   background-color: rgba(0, 225, 0);
 }
+
+.contenedor1  .select {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
 }
 
 @media only screen and (min-width: 320px) {
@@ -197,7 +215,7 @@ input {
 .tittle {
   display: flex;
   color: #000;
-  font-size: 2.8em;
+  font-size: 2.4em;
   padding-top: 10px;
 }
 
@@ -265,53 +283,67 @@ input {
   background-color: rgb(8, 185, 8);
 }
 
-.grados div {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.contenedor {
-  display: flex;
-  justify-content: center;
-  padding-left: 25%;
-}
 
 .contenedor .texto {
   color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.grados .contenedor .convertir {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+}
+
+
+.grados .contenedor .convertir1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .grados .contenedor div select {
   height: 30px;
   color: black;
   border-radius: 3px;
-  background-color: rgba(255, 214, 0, 255);
+  background-color: rgb(214, 193, 76);
+  display: flex;
+  justify-content: center;
+
+
 }
 
-.lados {
+#lados {
   padding-left: 50%;
   display: flex;
   padding: 10px;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  
 }
 
-.lados label {
+#lados label {
   display: flex;
   justify-content: center;
   color: rgba(0, 0, 0);
 }
-.lados [type="text"] {
+#lados [type="text"] {
   width: 200px;
   height: 30px;
-  margin-left: 42%;
   border-radius: 5px;
   align-items: center;
 }
 
-.lados input {
+#lados .consultar {
   display: flex;
   justify-content: center;
-
+  margin-left: 0;
 }
 
 /*Ejercicio 2*/
@@ -324,9 +356,7 @@ input {
   font-size: 1em;
 }
 
-input {
-  border-color: rgb(0, 0, 0);
-}
+
 
 .contenedor1 {
   display:flex;
@@ -336,11 +366,10 @@ input {
 }
 
 .contenedor1 .texto {
-  
   padding: 10px;
-  
-  
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .contenedor1 .texto {
@@ -353,7 +382,20 @@ input {
   height: 30px;
   color: rgba(0, 0, 0);
   border-radius: 3px;
-  background-color: rgba(0, 225, 0);
+  background-color: rgb(214, 193, 76);
+}
+
+.contenedor1 .select {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.contenedor1 .select1 {
+  width: 60%;
+  display: flex;
+  justify-content: center;
 }
 
 }
